@@ -1,38 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
 .App {
+  min-height: 100%;
+}
+
+/* base styles */
+body{
+  height: 100%;
+  position: relative;
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  font-size: 1.6em;
+  background: #dfdfdf;
+  color: rgb(112, 70, 70);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-title {
+  text-align: center;
+  margin: 40px auto;
+  color: rgb(163, 84, 84);
+  font-family: 'Tangerine', serif;
+  font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4, p {
+  margin: 0px auto;
+  max-width: 960px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loading, .error {
+  text-align: center;
+  margin: 40px auto;
 }
